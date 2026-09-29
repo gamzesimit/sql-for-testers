@@ -34,6 +34,7 @@ All four files run clean. No arithmetic break, no orphaned row, no tax or
 currency rate outside a sane range, no duplicate invoice number, no invoice
 marked paid without matching payments.
 
-That is worth recording. A set of checks that has never returned a row on any
-database is a set of checks nobody has proved works, so each one was also run
-against a deliberately broken copy to confirm it does catch what it claims to.
+That is worth recording, and on its own it proves nothing. A set of checks that
+has never returned a row is a set of checks nobody has shown to work. Four of
+them are therefore run again against a database with a fault inserted, and each
+one has to return the faulty row. See [proving the checks](proving-the-checks.md).
