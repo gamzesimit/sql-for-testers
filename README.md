@@ -12,6 +12,7 @@ no rows.
 | `queries/04-duplicates-and-reconciliation.sql` | No duplicate invoice numbers, no repeated payment on the same day, and every invoice marked paid has payments that add up |
 
 Schema notes: [schema/notes.md](schema/notes.md)
+Proving the checks catch something: [docs/proving-the-checks.md](docs/proving-the-checks.md)
 How to run them: [docs/how-to-run.md](docs/how-to-run.md)
 
 ## Why an empty result is the pass
